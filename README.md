@@ -4,7 +4,7 @@ First step towards building an efficient OCR system is to find out the specific 
 
 ## Data : 
 
-The dataset used is ICDAR competetion dataset available here : [Drive Link]
+The dataset used is ICDAR competetion dataset available here : [Drive Link] https://drive.google.com/drive/u/0/folders/1aUuw0Xh34tKDXVDhecbjcqs0HXYPr-YA
 
 
 Train images = 376 <br />
