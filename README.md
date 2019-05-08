@@ -4,8 +4,7 @@ First step towards building an efficient OCR system is to find out the specific 
 
 ## Data : 
 
-The dataset used is ICDAR competetion dataset available here : [Drive Link](https://drive.google.com/drive/u/0/folders/1aUuw0Xh34tKDXVDhecbjcqs0HXYPr-YA)
-
+The dataset used is ICDAR competetion dataset available here : [Drive Link](https://drive.google.com/open?id=1ObrV9pbH_-LBGbIodWgB6W4dtQloTTH6)
 Train images = 376 <br />
 Validation images = 115
 
@@ -18,7 +17,7 @@ Necessary changes need to be done in the Preprocess.py file to input the custom 
 
 ## Model :
 
-MobileNetv2 architecture is used as a feture extractor. The main reason for choosing MobileNetv2 is the high accuracy and the less number of weights. The fully connected layers of MobileNet are removed. Three Conv layers are added to the last layer of the MobileNet architecture to output a shape of (grid height , grid width , 1 , 5 ). The model weights can be found here : [Drive Link]
+MobileNetv2 architecture is used as a feture extractor. The main reason for choosing MobileNetv2 is the high accuracy and the less number of weights. The fully connected layers of MobileNet are removed. Three Conv layers are added to the last layer of the MobileNet architecture to output a shape of (grid height , grid width , 1 , 5 ). The model weights can be found here : [Drive Link](https://drive.google.com/open?id=1OwrEu6SeaNM3l_clLN9F40W-tMpRfz97)
 
 
 ## Loss Function and Training:
