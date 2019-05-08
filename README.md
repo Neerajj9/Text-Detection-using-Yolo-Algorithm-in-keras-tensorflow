@@ -7,7 +7,7 @@ First step towards building an efficient OCR system is to find out the specific 
 The dataset used is ICDAR competetion dataset available here : [Drive Link]
 
 
-Train images = 376
+Train images = 376 <br />
 Validation images = 115
 
 ## Preprocessing :
@@ -20,9 +20,18 @@ Necessary changes need to be done in the Preprocess.py file to input the custom 
 
 ## Model :
 
-The fully connected layers of MobileNetv2 are removed and it is used as a feature extractor. Three Conv layers are added to the last layer of the MobileNet architecture to output a shape of (grid height , grid width , 1 , 5 ). The model weights can be found here : 
+MobileNetv2 architecture is used as a feture extractor. The main reason for choosing MobileNetv2 is the high accuracy and the less number of weights. The fully connected layers of MobileNet are removed. Three Conv layers are added to the last layer of the MobileNet architecture to output a shape of (grid height , grid width , 1 , 5 ). The model weights can be found here : [Drive Link]
 
 
-## Training :
+## Loss Function and Training:
 
-The model is trained for 180 epochs in total with a batch size of 4.  The learning rate was kept at 0.001 for the first 100 epochs and lowered to 0.0001 for the next 80 epochs.
+The loss function implemented is the one specified in the YOLO paper. As there is only one class to be predicted, the contribution of class predictions to the loss is eliminated. 
+<br />
+
+The model is trained for 180 epochs in total with a batch size of 4.  The learning rate was kept at 0.001 for the first 100 epochs and lowered to 0.0001 for the next 80 epochs. 
+
+## Inference :
+
+The Utils.py consists of the functions used to convert the matrix output ( grid height , grid width , 1 , 5 ) of the model to actual predicted bounding boxes. Non max suppression is used to eliminate boxes on the same object as stated in the YOLO paper.
+
+
