@@ -42,8 +42,9 @@ The Utils.py consists of the functions used to convert the matrix output ( grid 
 <br />
 
 ## Requirements : 
-Keras : 2.2.2 <br />
-Tensorflow : 1.9.0 <br />
-OpenCV : 3.4.1 <br />
-Numpy : 1.14.3 <br />
-Matplotlib : 2.2.2 <br />
+
+1. Keras : 2.2.2 
+2. Tensorflow : 1.9.0 
+3. OpenCV : 3.4.1 
+4. Numpy : 1.14.3 
+5. Matplotlib : 2.2.2 
