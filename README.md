@@ -32,4 +32,8 @@ The model is trained for 180 epochs in total with a batch size of 4.  The learni
 
 The Utils.py consists of the functions used to convert the matrix output ( grid height , grid width , 1 , 5 ) of the model to actual predicted bounding boxes. Non max suppression is used to eliminate boxes on the same object as stated in the YOLO paper.
 
+## Results :
 
+![alt text](https://github.com/Neerajj9/Text-Detection-using-Yolo-Algorithm-in-keras-tensorflow/blob/master/Results1/28.jpg)
+![alt text](https://github.com/Neerajj9/Text-Detection-using-Yolo-Algorithm-in-keras-tensorflow/blob/master/Results1/113.jpg)
+![alt text](https://github.com/Neerajj9/Text-Detection-using-Yolo-Algorithm-in-keras-tensorflow/blob/master/Results1/114.jpg)
