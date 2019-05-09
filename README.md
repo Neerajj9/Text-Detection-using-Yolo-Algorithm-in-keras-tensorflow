@@ -34,6 +34,16 @@ The Utils.py consists of the functions used to convert the matrix output ( grid 
 
 ## Results :
 
-![alt text](https://github.com/Neerajj9/Text-Detection-using-Yolo-Algorithm-in-keras-tensorflow/blob/master/Results1/28.jpg = 400*400)
+![alt text](https://github.com/Neerajj9/Text-Detection-using-Yolo-Algorithm-in-keras-tensorflow/blob/master/Results1/28.jpg)
+<br />
 ![alt text](https://github.com/Neerajj9/Text-Detection-using-Yolo-Algorithm-in-keras-tensorflow/blob/master/Results1/113.jpg)
+<br />
 ![alt text](https://github.com/Neerajj9/Text-Detection-using-Yolo-Algorithm-in-keras-tensorflow/blob/master/Results1/114.jpg)
+<br />
+
+## Requirements : 
+Keras : 2.2.2 <br />
+Tensorflow : 1.9.0 <br />
+OpenCV : 3.4.1 <br />
+Numpy : 1.14.3 <br />
+Matplotlib : 2.2.2 <br />
