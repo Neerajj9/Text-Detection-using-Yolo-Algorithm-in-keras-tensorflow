@@ -11,10 +11,10 @@ Validation images = 115
 
 ## Preprocessing :
 
-The Preprocess.py file handles all the necessary preprocessing and saves the data in the form of numpy arrays. First, the images are resized to (512,512) dimensions. Accordingly, the ground truth of the boxes is modified as well. All the images are normalized to a range of [-1 , 1]. The ground truth coordinates are processed to form a matrix of dimensions as ( grid height , grid width , 1 , 5 ). 
+The `Preprocess.py` file handles all the necessary preprocessing and saves the data in the form of numpy arrays. First, the images are resized to (512,512) dimensions. Accordingly, the ground truth of the boxes is modified as well. All the images are normalized to a range of [-1 , 1]. The ground truth coordinates are processed to form a matrix of dimensions as ( grid height , grid width , 1 , 5 ). 
 
 ### Custom data :
-Necessary changes need to be done in the Preprocess.py file to input the custom data and images, to create the appropriate input and output matrices. 
+Necessary changes need to be done in the `Preprocess.py` file to input the custom data and images, to create the appropriate input and output matrices. 
 
 ## Model :
 
@@ -30,7 +30,7 @@ The model is trained for 180 epochs in total with a batch size of 4.  The learni
 
 ## Inference :
 
-The Utils.py consists of the functions used to convert the matrix output ( grid height , grid width , 1 , 5 ) of the model to actual predicted bounding boxes. Non max suppression is used to eliminate boxes on the same object as stated in the YOLO paper.
+The `Utils.py` consists of the functions used to convert the matrix output ( grid height , grid width , 1 , 5 ) of the model to actual predicted bounding boxes. Non max suppression is used to eliminate boxes on the same object as stated in the YOLO paper.
 
 ## Results :
 
