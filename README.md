@@ -2,6 +2,10 @@
 
 First step towards building an efficient OCR system is to find out the specific text locations. Implemented the YOLO ( You Only Look Once ) algorithm from scratch (no object detection API used) for the specific task of Scene Text Detection in python using keras and tensorflow.
 
+## What is yolo?
+
+Yolo (You only look Once) is a CNN based technique for object detection.
+
 ## Data : 
 
 The dataset used is ICDAR competetion dataset available here : [Drive Link](https://drive.google.com/open?id=1ObrV9pbH_-LBGbIodWgB6W4dtQloTTH6)
